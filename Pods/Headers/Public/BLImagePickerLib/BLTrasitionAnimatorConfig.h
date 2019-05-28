@@ -1,0 +1,1 @@
+../../../BLImagePickerLib/BlImagePickerLib/BLTransitionAnimation/BLTrasitionAnimatorConfig.h

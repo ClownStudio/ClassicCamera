@@ -1,0 +1,12 @@
+/* 
+  InfoPlist.strings
+  ClassicCamera
+
+  Created by 张文洁 on 2018/5/9.
+  Copyright © 2018年 JamStudio. All rights reserved.
+*/
+
+NSPhotoLibraryUsageDescription = "NSPhotoLibraryUsageDescription";
+NSCameraUsageDescription = "NSCameraUsageDescription";
+NSMicrophoneUsageDescription = "NSMicrophoneUsageDescription";
+NSPhotoLibraryAddUsageDescription = "NSPhotoLibraryAddUsageDescription";

@@ -1,0 +1,66 @@
+/* 
+  Localizable.strings
+  ClassicCamera
+
+  Created by 张文洁 on 2018/5/9.
+  Copyright © 2018年 JamStudio. All rights reserved.
+*/
+
+"Date" = "日期";
+"Restore" = "恢复购买";
+"Rate" = "给我评分";
+"Support" = "支持";
+"Follow" = "关注";
+"More" = "更多";
+
+"Year" = "年/月/日";
+"Month" = "月/日/年";
+"Day" = "日/月/年";
+
+"Tip" = "提醒";
+"NoPermission" = "您的手机没有打开程序内付费购买哦，购买失败";
+"Restoring" = "正在恢复购买";
+"Loading" = "加载中";
+"NoCheckout" = "未查询到该商品，购买失败";
+"PayError" = "购买失败";
+"RestoreComplete" = "恢复购买完成";
+"NoMailAccount" = "无邮件帐户,请设置邮件帐户来发送电子邮件";
+"NoSupportMail" = "您的设备不支持邮件功能";
+"NoSupportLight" = "对不起，您的设备暂不支持更改闪光灯模式";
+"Process" = "处理中...";
+"NoAccessCamera" = "失败！请在系统设置中开启访问相机权限";
+"SaveSuccess" = "保存成功";
+"SaveError" = "保存失败";
+"Saving" = "保存中";
+"NoAccessAlbum" = "失败！无法访问相册";
+"CreateAlbumError" = "创建相册失败";
+"Deleting" = "正在删除";
+"Deleted" = "删除成功";
+
+"Evaluate" = "能请给我们的应用一个评价么？";
+"OK" = "好的";
+"Cancel" = "取消";
+"SelectDate" = "请选择您需要显示的日期样式";
+"ShouldPay" = "您可能需要购买才能使用此相机哦？";
+"BuySingle" = "单独购买";
+"BuyAll" = "全部购买";
+
+"SelectSaveVersion" = "请选择您要保存的大小类型";
+"Small" = "小 (原大小1/3比例)";
+"Medium" = "中 (原大小2/3比例)";
+"Normal" = "正常比例";
+
+"DateSign" = "日期戳记";
+"Date" = "日期";
+"DateFormat" = "日期格式";
+"TakePhotoSetting" = "拍照选项";
+"ViewPortHitEnable" = "取景器触控模式";
+"ResetDate" = "重置当前日期";
+
+"EditError" = "图片裁剪失败，请您重新再试";
+"AutoSaveMode" = "自动保存";
+"AlbumBonderMode" = "使用边框(仅相册模式)";
+"AlbumDateMode" = "日期印记(仅相册模式)";
+"AlbumTitle" = "相机胶卷";
+"AllAlbum" = "所有相册";
+"ImageClip" = "图片剪裁";

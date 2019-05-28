@@ -1,0 +1,999 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01A7056EA08B7A1EAD1F00F5F7FB5ED0 /* BLImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D88B0957574AF9C0AEF48421962451 /* BLImagePickerViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0335F73202A5DA90785061F9F5D992B0 /* UINavigationController+BLPushTrasition.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A0AD2D6A06AD30A51D10ADFBCC5B92A /* UINavigationController+BLPushTrasition.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		03AD607898F087EB52275B61B27B5031 /* BLPreviewImageFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 276979253386520CA75DEAADB34F9D62 /* BLPreviewImageFooterView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0B9F55EEA17BD5856C6EAEF3A1E8EF16 /* BLPhotoListFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A4C47A18DF05C71A6C29ECDD1D6F8FF /* BLPhotoListFooterView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0F8A414BCD59AC4298EDC323315323AF /* BLImageGroupViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C207DA8F26313351E1DCE458FD61AC51 /* BLImageGroupViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0F92AE1E719D4FFE80745102AA5E0CC4 /* BLListCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2361367F290C7D6D65C4976D1DCF6DC4 /* BLListCollectionViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		135C3EB3EE7B892086075C83458EBB21 /* Pods-ClassicCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148E9C2C80E543789055C3D8093BF8E /* Pods-ClassicCamera-dummy.m */; };
+		1A2FB482A3E6213D3D4A3E7FD621B223 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 903D694DE512072A216139CF3E7E8A06 /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1E528D890E3B32D53D963CE1417BA4D8 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF80FE536BED63F710E73677E8FEEF4 /* MBProgressHUD-dummy.m */; };
+		2ABE4EFE428B9930F6209DBB4EA00BCD /* BLDIYTrasitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEADDBD3C94638901145C19B5FCD05F /* BLDIYTrasitionAnimation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2BF1843D6868894157406CF893792BE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7524F0BE53ABC149C4387DFEFE2B51 /* Foundation.framework */; };
+		2D4C15ABD1A055B122847691201B0A23 /* BLListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C866AD3A83C5922FC8AAEB28B3960589 /* BLListCollectionViewCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		38CA1C30AC62AB17DBBD56E9DE50A804 /* BLImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F731BCF3C1879F464E0E61C67A324A02 /* BLImageHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3C949109E1D9A59668292BDC0F1124DF /* BLPhotoListFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFA25D0325C4771D773234933BB41306 /* BLPhotoListFooterView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3E28907827662B15C0C3116AA057C92C /* BLTrasitionAnimatorConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = BA0063EF1BE98D7B9894665A0B788FED /* BLTrasitionAnimatorConfig.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3E801C3CB5DF66B149A335F56716003A /* BLTabBarTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 327C4AA3F88B18C2CB6AC53F2AB4FBBF /* BLTabBarTransitionAnimator.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4027908091B66808134A62A3D941C45F /* UINavigationController+BLPushTrasition.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D7FF6BB8187FF47A1111224E5FF5C4 /* UINavigationController+BLPushTrasition.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		475E9E9FDACEADD834AD4CFCFABAE558 /* BLPreviewImageHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9D0D0974CC1AA7694C8E6EA945A1B1 /* BLPreviewImageHeaderView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		48779F5159869FEBE71B5A76E554E1AC /* BLPickerBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCFD512B0389C7569435B99BB2D7C29 /* BLPickerBaseViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4A2463C8751CDC0ADC30BBBE3E755E8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7524F0BE53ABC149C4387DFEFE2B51 /* Foundation.framework */; };
+		509D8F10DC7BD0265790C450C94228E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8621F66D446C6F4AC0D7F817144EB150 /* CoreGraphics.framework */; };
+		5489FCFA85C72A2539B344AE66EAE3DD /* BLListFooterReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCBC76BB4BFFE765E231F6742102CB5 /* BLListFooterReusableView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		55FDC4A1F445F8B06664713A02435479 /* BLPreviewImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4646A36FC47BAD9E3826C73F406B637 /* BLPreviewImageViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		669005691687C6B3E1258467793987F6 /* MBProgressHUD+JDragon.h in Headers */ = {isa = PBXBuildFile; fileRef = 457408689D2122205D54F563E8001115 /* MBProgressHUD+JDragon.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6C9110A7E8C70E857D00ED334E05D4FD /* BLPhotoGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A7D22F02E5C6EE4E77DF24EC842256 /* BLPhotoGroupCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6FCAACE2837E096488ABE2843F86CD68 /* BLPreviewImageFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 414E7DB5CFDC4BB340CFE52B567A4507 /* BLPreviewImageFooterView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		70143536011CECD646388900FEE35D93 /* BLPickerBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DCE794B5F0A42AC88491E7FF75003400 /* BLPickerBaseViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7875F6F280ED211DA3063FF7ECC74781 /* BLTabBarTransitionAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = C145D61F0D9863726AF5876DD931AB60 /* BLTabBarTransitionAnimator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7D460577B5E8367348EBA86E2CB86AB2 /* BLImagePickerLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CE02E4A516E6DBE1DAC9FACBED4076 /* BLImagePickerLib-dummy.m */; };
+		82B03FE245202AB6521B0FF231D06B1E /* BLListFooterReusableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 33190F5E5CBCFAABA7251458FCB521B3 /* BLListFooterReusableView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		841C852BCAD3083D1020FAAAC8C1AD64 /* PHAsset+AddFlag.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDD9BC36003A446347FCB08E98DA3B /* PHAsset+AddFlag.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		86AD906E5F401B233FDB9D67B74090B7 /* UIViewController+BLPresentTrasition.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D648DCFCD939AA887AE47348FA039B /* UIViewController+BLPresentTrasition.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		87F36AA4DB8F467585EC3C4EA8478DA5 /* BLDIYTrasitionAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = A04067153FC91FC12409B3BF630FBD16 /* BLDIYTrasitionAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8DDB507683AFD34C43B7FF97892E8856 /* MBProgressHUD+JDragon.m in Sources */ = {isa = PBXBuildFile; fileRef = 35245DC362D0A20F63EB62FD1866E522 /* MBProgressHUD+JDragon.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		951E122F9EFF8F6DF2AAF2E80A10630A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7524F0BE53ABC149C4387DFEFE2B51 /* Foundation.framework */; };
+		9F9039A7DFF3CE5D137EE0E046A90716 /* BLImagePickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E31C5E86C7BF84F13FBC60CD0297D5FC /* BLImagePickerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ACFC6A024EE4FAE34134B575F7A463B2 /* BLImageHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B97FE216B64EDF0510823F59FF6644A /* BLImageHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AE373DB5E01125EA1F449A428C4B3F5D /* BLPickerConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = FF078C5947DA44BA4863A178316D8336 /* BLPickerConfig.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B450FB11C8A5618839159C5CAED05CC7 /* BLTransitionInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = C2954592014112F624912A4FA54C0E2E /* BLTransitionInteraction.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B6464F16AA0E67B8AB5CEEF8A36C72C0 /* BLPhotoGroupCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E7E7928066EF57627D28AD9883E6D34 /* BLPhotoGroupCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B9BC1ED0FFDE786FAC4E621613643F0A /* BLPresentTransitionAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3758E2D41CDFBA7936860BA434F99D0C /* BLPresentTransitionAnimator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BAD768532F2042F68B53AE18C737CCF3 /* BLImageGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0493B34E89E0876F4DD100E910D45087 /* BLImageGroupViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BE08FC3CA35C9B85C0B51D945646E7E3 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = FDE552AD05889961EBEF8EF1E8240B28 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C6DEF2A7A36470A3805EA20F004EAB87 /* BLPreviewImageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CB0009EAE2411EEC0AC707644ADFD769 /* BLPreviewImageViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C6E19F6D0F484B76CCDFFEF82F276EB1 /* BLImageClipingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4759D5A280C7238176900B70C9767866 /* BLImageClipingViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C93807D7E42C8EC886BFFD1B21ADBBA1 /* BLPreviewImageCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC493F9BBAE6DB0C4EDF5107C0C07DB /* BLPreviewImageCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CB59BD1643651E22F444F2800CAB2224 /* BLPreviewImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43663DF2FB40E344AF09898B4A51C26C /* BLPreviewImageCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CF33300FF0AFCB5AC0C16274DA61B47F /* BLTransitionAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 91757B2D74B0D62B7B6570C6A21F505D /* BLTransitionAnimator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CFB0717294DDD7B2F3408456646F793C /* MBProgressHUD+JDragon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B3068806DFCF8580886042440819C3 /* MBProgressHUD+JDragon-dummy.m */; };
+		D61CC8D5BE08FFD6EFA801908304367C /* BLPreviewImageHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = EE09CD981D4BF759AAF55BA260C83FDC /* BLPreviewImageHeaderView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DDED3B3874E713BA79E3F6F67AF6C6D0 /* BLPushTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DCAFBA738267ACF2D1BC6AEBB97721 /* BLPushTransitionAnimator.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E59881441E17A383EA65D3E5C5DDBE37 /* BLPushTransitionAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = D5C985C1C81813137F09EA4B1C3BCDD3 /* BLPushTransitionAnimator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E7C6248FF603682AA162B1AB87BCAFEE /* PHAsset+AddFlag.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B15A1E17C321A14DA03FCDF73ACECAB /* PHAsset+AddFlag.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EA00796E17303197664BD5F976B6EC65 /* BLPresentTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC067E3C38F1A2F0991A7DA584BB83 /* BLPresentTransitionAnimator.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F18E30D11CE2519EBF3AEB65AB08609F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7524F0BE53ABC149C4387DFEFE2B51 /* Foundation.framework */; };
+		F45E86CD96BC00355218C54C44154CC8 /* UIViewController+BLPresentTrasition.h in Headers */ = {isa = PBXBuildFile; fileRef = 2851551E6250C2D9BA68E0E9D0F8A65E /* UIViewController+BLPresentTrasition.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FF8CAD82A884370BE22B8CBAF6D3D33F /* BLImageClipingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C2AC4F457D7ED81DD9C9CD878BE5C5 /* BLImageClipingViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FFC5C3B1849CBB020DC4BC5783517900 /* BLTransitionInteraction.h in Headers */ = {isa = PBXBuildFile; fileRef = D2DC5430621A624001457AA5BA5CB3AC /* BLTransitionInteraction.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0ED6F3A22E5F4A718C71C611D71FB943 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 175B076ED45EB1A3E40F58BA14036467;
+			remoteInfo = MBProgressHUD;
+		};
+		26DFDC8A90DB928A02C4FE87695E95A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C418F2DC4130AAA12E79610E135055DD;
+			remoteInfo = BLImagePickerLib;
+		};
+		30B445C0706D8E52111849F075CB8A22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 175B076ED45EB1A3E40F58BA14036467;
+			remoteInfo = MBProgressHUD;
+		};
+		C4172B3B0B542E2959306D6427CB8761 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1E7DE1ED655B8BD1D9C56CEAD18E7C7;
+			remoteInfo = "MBProgressHUD+JDragon";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0493B34E89E0876F4DD100E910D45087 /* BLImageGroupViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLImageGroupViewController.m; path = BlImagePickerLib/BlPhotoAlbum/BLImageGroupViewController.m; sourceTree = "<group>"; };
+		079DDFF5BB0F6FF99F728FDD1E8593C8 /* libBLImagePickerLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libBLImagePickerLib.a; path = libBLImagePickerLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A4C47A18DF05C71A6C29ECDD1D6F8FF /* BLPhotoListFooterView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLPhotoListFooterView.h; path = BlImagePickerLib/BlImageList/BLPhotoListFooterView.h; sourceTree = "<group>"; };
+		0DA0CFDF876409BECC058512432A375E /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = BlImagePickerLib/BlImageConfig/Assets.xcassets; sourceTree = "<group>"; };
+		10D648DCFCD939AA887AE47348FA039B /* UIViewController+BLPresentTrasition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+BLPresentTrasition.m"; path = "BlImagePickerLib/BLTransitionAnimation/UIViewController+BLPresentTrasition.m"; sourceTree = "<group>"; };
+		1148E9C2C80E543789055C3D8093BF8E /* Pods-ClassicCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ClassicCamera-dummy.m"; sourceTree = "<group>"; };
+		1BCFD512B0389C7569435B99BB2D7C29 /* BLPickerBaseViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLPickerBaseViewController.m; path = BlImagePickerLib/BlImageConfig/BLPickerBaseViewController.m; sourceTree = "<group>"; };
+		1E7E7928066EF57627D28AD9883E6D34 /* BLPhotoGroupCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLPhotoGroupCell.h; path = BlImagePickerLib/BlPhotoAlbum/BLPhotoGroupCell.h; sourceTree = "<group>"; };
+		21F964DE1A19ACD9389D1BE86BA57052 /* MBProgressHUD+JDragon.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = "MBProgressHUD+JDragon.bundle"; path = "MBProgressHUD+JDragon/MBProgressHUD+JDragon.bundle"; sourceTree = "<group>"; };
+		2361367F290C7D6D65C4976D1DCF6DC4 /* BLListCollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLListCollectionViewCell.h; path = BlImagePickerLib/BlImageList/BLListCollectionViewCell.h; sourceTree = "<group>"; };
+		276979253386520CA75DEAADB34F9D62 /* BLPreviewImageFooterView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLPreviewImageFooterView.h; path = BlImagePickerLib/BlImagepreview/BLPreviewImageFooterView.h; sourceTree = "<group>"; };
+		2851551E6250C2D9BA68E0E9D0F8A65E /* UIViewController+BLPresentTrasition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+BLPresentTrasition.h"; path = "BlImagePickerLib/BLTransitionAnimation/UIViewController+BLPresentTrasition.h"; sourceTree = "<group>"; };
+		2A0AD2D6A06AD30A51D10ADFBCC5B92A /* UINavigationController+BLPushTrasition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+BLPushTrasition.h"; path = "BlImagePickerLib/BLTransitionAnimation/UINavigationController+BLPushTrasition.h"; sourceTree = "<group>"; };
+		2B97FE216B64EDF0510823F59FF6644A /* BLImageHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLImageHelper.h; path = BlImagePickerLib/BlImageConfig/BLImageHelper.h; sourceTree = "<group>"; };
+		327C4AA3F88B18C2CB6AC53F2AB4FBBF /* BLTabBarTransitionAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLTabBarTransitionAnimator.m; path = BlImagePickerLib/BLTransitionAnimation/BLTabBarTransitionAnimator.m; sourceTree = "<group>"; };
+		33190F5E5CBCFAABA7251458FCB521B3 /* BLListFooterReusableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLListFooterReusableView.h; path = BlImagePickerLib/BlImageList/BLListFooterReusableView.h; sourceTree = "<group>"; };
+		35245DC362D0A20F63EB62FD1866E522 /* MBProgressHUD+JDragon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MBProgressHUD+JDragon.m"; path = "MBProgressHUD+JDragon/MBProgressHUD+JDragon.m"; sourceTree = "<group>"; };
+		3758E2D41CDFBA7936860BA434F99D0C /* BLPresentTransitionAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLPresentTransitionAnimator.h; path = BlImagePickerLib/BLTransitionAnimation/BLPresentTransitionAnimator.h; sourceTree = "<group>"; };
+		38AC118EC3AFE8E2245E428D4E0E5606 /* Pods-ClassicCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClassicCamera.release.xcconfig"; sourceTree = "<group>"; };
+		3C6809BFAB8D6B3FA356C5516E6B611D /* BLImagePicker.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = BLImagePicker.storyboard; path = BlImagePickerLib/BlImageList/BLImagePicker.storyboard; sourceTree = "<group>"; };
+		414E7DB5CFDC4BB340CFE52B567A4507 /* BLPreviewImageFooterView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLPreviewImageFooterView.m; path = BlImagePickerLib/BlImagepreview/BLPreviewImageFooterView.m; sourceTree = "<group>"; };
+		43663DF2FB40E344AF09898B4A51C26C /* BLPreviewImageCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLPreviewImageCell.m; path = BlImagePickerLib/BlImagepreview/BLPreviewImageCell.m; sourceTree = "<group>"; };
+		457408689D2122205D54F563E8001115 /* MBProgressHUD+JDragon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MBProgressHUD+JDragon.h"; path = "MBProgressHUD+JDragon/MBProgressHUD+JDragon.h"; sourceTree = "<group>"; };
+		4759D5A280C7238176900B70C9767866 /* BLImageClipingViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLImageClipingViewController.h; path = BlImagePickerLib/BlImageClipping/BLImageClipingViewController.h; sourceTree = "<group>"; };
+		54C2AC4F457D7ED81DD9C9CD878BE5C5 /* BLImageClipingViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLImageClipingViewController.m; path = BlImagePickerLib/BlImageClipping/BLImageClipingViewController.m; sourceTree = "<group>"; };
+		55D7FF6BB8187FF47A1111224E5FF5C4 /* UINavigationController+BLPushTrasition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+BLPushTrasition.m"; path = "BlImagePickerLib/BLTransitionAnimation/UINavigationController+BLPushTrasition.m"; sourceTree = "<group>"; };
+		5901B11FF2F0812175062CFB15989CCD /* libMBProgressHUD+JDragon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libMBProgressHUD+JDragon.a"; path = "libMBProgressHUD+JDragon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B15A1E17C321A14DA03FCDF73ACECAB /* PHAsset+AddFlag.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PHAsset+AddFlag.h"; path = "BlImagePickerLib/BlImageConfig/PHAsset+AddFlag.h"; sourceTree = "<group>"; };
+		5DC493F9BBAE6DB0C4EDF5107C0C07DB /* BLPreviewImageCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLPreviewImageCell.h; path = BlImagePickerLib/BlImagepreview/BLPreviewImageCell.h; sourceTree = "<group>"; };
+		61636FB4028F0447D1C10AECAF1B7CD5 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMBProgressHUD.a; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C1090A5B52F6C0E11CD776BD6B75541 /* Pods-ClassicCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ClassicCamera.debug.xcconfig"; sourceTree = "<group>"; };
+		74CE02E4A516E6DBE1DAC9FACBED4076 /* BLImagePickerLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BLImagePickerLib-dummy.m"; sourceTree = "<group>"; };
+		7B9D0D0974CC1AA7694C8E6EA945A1B1 /* BLPreviewImageHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLPreviewImageHeaderView.m; path = BlImagePickerLib/BlImagepreview/BLPreviewImageHeaderView.m; sourceTree = "<group>"; };
+		7DBC067E3C38F1A2F0991A7DA584BB83 /* BLPresentTransitionAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLPresentTransitionAnimator.m; path = BlImagePickerLib/BLTransitionAnimation/BLPresentTransitionAnimator.m; sourceTree = "<group>"; };
+		7E0E4853545E8B938EEC5592C4D0749F /* Pods-ClassicCamera-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ClassicCamera-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7EBDD9BC36003A446347FCB08E98DA3B /* PHAsset+AddFlag.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PHAsset+AddFlag.m"; path = "BlImagePickerLib/BlImageConfig/PHAsset+AddFlag.m"; sourceTree = "<group>"; };
+		80DCAFBA738267ACF2D1BC6AEBB97721 /* BLPushTransitionAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLPushTransitionAnimator.m; path = BlImagePickerLib/BLTransitionAnimation/BLPushTransitionAnimator.m; sourceTree = "<group>"; };
+		8621F66D446C6F4AC0D7F817144EB150 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		903D694DE512072A216139CF3E7E8A06 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		91757B2D74B0D62B7B6570C6A21F505D /* BLTransitionAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLTransitionAnimator.h; path = BlImagePickerLib/BLTransitionAnimation/BLTransitionAnimator.h; sourceTree = "<group>"; };
+		928774AAA72BCF1FCC327ED388FEE4CE /* BLImagePickerLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BLImagePickerLib-prefix.pch"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98D88B0957574AF9C0AEF48421962451 /* BLImagePickerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLImagePickerViewController.m; path = BlImagePickerLib/BLImagePickerViewController.m; sourceTree = "<group>"; };
+		9BB98EFEB11C0AE6A5999E0976932946 /* Pods-ClassicCamera-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ClassicCamera-acknowledgements.plist"; sourceTree = "<group>"; };
+		9C38F8A9CD40B58FC24946C9AA0D4197 /* MBProgressHUD+JDragon.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MBProgressHUD+JDragon.xcconfig"; sourceTree = "<group>"; };
+		A04067153FC91FC12409B3BF630FBD16 /* BLDIYTrasitionAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLDIYTrasitionAnimation.h; path = BlImagePickerLib/BLTransitionAnimation/BLDIYTrasitionAnimation.h; sourceTree = "<group>"; };
+		A2A7D22F02E5C6EE4E77DF24EC842256 /* BLPhotoGroupCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLPhotoGroupCell.m; path = BlImagePickerLib/BlPhotoAlbum/BLPhotoGroupCell.m; sourceTree = "<group>"; };
+		A4646A36FC47BAD9E3826C73F406B637 /* BLPreviewImageViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLPreviewImageViewController.m; path = BlImagePickerLib/BlImagepreview/BLPreviewImageViewController.m; sourceTree = "<group>"; };
+		ABCBC76BB4BFFE765E231F6742102CB5 /* BLListFooterReusableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLListFooterReusableView.m; path = BlImagePickerLib/BlImageList/BLListFooterReusableView.m; sourceTree = "<group>"; };
+		AC7524F0BE53ABC149C4387DFEFE2B51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AF7CDC8FE9FEDD77D40C8FFA2E5DA0DD /* Pods-ClassicCamera-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClassicCamera-frameworks.sh"; sourceTree = "<group>"; };
+		B6B3068806DFCF8580886042440819C3 /* MBProgressHUD+JDragon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+JDragon-dummy.m"; sourceTree = "<group>"; };
+		BA0063EF1BE98D7B9894665A0B788FED /* BLTrasitionAnimatorConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLTrasitionAnimatorConfig.h; path = BlImagePickerLib/BLTransitionAnimation/BLTrasitionAnimatorConfig.h; sourceTree = "<group>"; };
+		BEEADDBD3C94638901145C19B5FCD05F /* BLDIYTrasitionAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLDIYTrasitionAnimation.m; path = BlImagePickerLib/BLTransitionAnimation/BLDIYTrasitionAnimation.m; sourceTree = "<group>"; };
+		C145D61F0D9863726AF5876DD931AB60 /* BLTabBarTransitionAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLTabBarTransitionAnimator.h; path = BlImagePickerLib/BLTransitionAnimation/BLTabBarTransitionAnimator.h; sourceTree = "<group>"; };
+		C207DA8F26313351E1DCE458FD61AC51 /* BLImageGroupViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLImageGroupViewController.h; path = BlImagePickerLib/BlPhotoAlbum/BLImageGroupViewController.h; sourceTree = "<group>"; };
+		C2954592014112F624912A4FA54C0E2E /* BLTransitionInteraction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLTransitionInteraction.m; path = BlImagePickerLib/BLTransitionAnimation/BLTransitionInteraction.m; sourceTree = "<group>"; };
+		C866AD3A83C5922FC8AAEB28B3960589 /* BLListCollectionViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLListCollectionViewCell.m; path = BlImagePickerLib/BlImageList/BLListCollectionViewCell.m; sourceTree = "<group>"; };
+		CB0009EAE2411EEC0AC707644ADFD769 /* BLPreviewImageViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLPreviewImageViewController.h; path = BlImagePickerLib/BlImagepreview/BLPreviewImageViewController.h; sourceTree = "<group>"; };
+		CE1FB2F0D49ED8BC68DD96BF1C943D88 /* MBProgressHUD+JDragon-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+JDragon-prefix.pch"; sourceTree = "<group>"; };
+		CFEF8F6673AF4788E8E20AD403067151 /* BLImagePickerLib.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BLImagePickerLib.xcconfig; sourceTree = "<group>"; };
+		D2DC5430621A624001457AA5BA5CB3AC /* BLTransitionInteraction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLTransitionInteraction.h; path = BlImagePickerLib/BLTransitionAnimation/BLTransitionInteraction.h; sourceTree = "<group>"; };
+		D5C985C1C81813137F09EA4B1C3BCDD3 /* BLPushTransitionAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLPushTransitionAnimator.h; path = BlImagePickerLib/BLTransitionAnimation/BLPushTransitionAnimator.h; sourceTree = "<group>"; };
+		DAF80FE536BED63F710E73677E8FEEF4 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		DCE794B5F0A42AC88491E7FF75003400 /* BLPickerBaseViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLPickerBaseViewController.h; path = BlImagePickerLib/BlImageConfig/BLPickerBaseViewController.h; sourceTree = "<group>"; };
+		DFA25D0325C4771D773234933BB41306 /* BLPhotoListFooterView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLPhotoListFooterView.m; path = BlImagePickerLib/BlImageList/BLPhotoListFooterView.m; sourceTree = "<group>"; };
+		E1A8A8A87CF312D818F7353D05E612CC /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		E31C5E86C7BF84F13FBC60CD0297D5FC /* BLImagePickerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLImagePickerViewController.h; path = BlImagePickerLib/BLImagePickerViewController.h; sourceTree = "<group>"; };
+		EE09CD981D4BF759AAF55BA260C83FDC /* BLPreviewImageHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLPreviewImageHeaderView.h; path = BlImagePickerLib/BlImagepreview/BLPreviewImageHeaderView.h; sourceTree = "<group>"; };
+		EEC2646C45E9C32DB88BE76E38811B05 /* libPods-ClassicCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ClassicCamera.a"; path = "libPods-ClassicCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F538903FC2ED62F0C5EF59FC120A592C /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		F731BCF3C1879F464E0E61C67A324A02 /* BLImageHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BLImageHelper.m; path = BlImagePickerLib/BlImageConfig/BLImageHelper.m; sourceTree = "<group>"; };
+		F93DC05EA2B5C7E3834296885A630473 /* Pods-ClassicCamera-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ClassicCamera-resources.sh"; sourceTree = "<group>"; };
+		FDE552AD05889961EBEF8EF1E8240B28 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		FF078C5947DA44BA4863A178316D8336 /* BLPickerConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BLPickerConfig.h; path = BlImagePickerLib/BlImageConfig/BLPickerConfig.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12070984FA8985EF77A932BEC1CF2A5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				509D8F10DC7BD0265790C450C94228E3 /* CoreGraphics.framework in Frameworks */,
+				951E122F9EFF8F6DF2AAF2E80A10630A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C91767A631DC4BB01B3F771422B3C7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A2463C8751CDC0ADC30BBBE3E755E8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90C20092F51959D22EEA7397A6D1C800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F18E30D11CE2519EBF3AEB65AB08609F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AA458371D0359FA03B581DD04CA762A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF1843D6868894157406CF893792BE3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07C80350B5CBF6A0FDE4E18BAE97CE7B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				21F964DE1A19ACD9389D1BE86BA57052 /* MBProgressHUD+JDragon.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		18A7DDAB40B9217F331B539CD03D02A2 /* MBProgressHUD+JDragon */ = {
+			isa = PBXGroup;
+			children = (
+				457408689D2122205D54F563E8001115 /* MBProgressHUD+JDragon.h */,
+				35245DC362D0A20F63EB62FD1866E522 /* MBProgressHUD+JDragon.m */,
+				07C80350B5CBF6A0FDE4E18BAE97CE7B /* Resources */,
+				72DEAE548CD7A37917EAA82EE9965546 /* Support Files */,
+			);
+			name = "MBProgressHUD+JDragon";
+			path = "MBProgressHUD+JDragon";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C93AA53D048424A67CC426E3C9422A44 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72DEAE548CD7A37917EAA82EE9965546 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C38F8A9CD40B58FC24946C9AA0D4197 /* MBProgressHUD+JDragon.xcconfig */,
+				B6B3068806DFCF8580886042440819C3 /* MBProgressHUD+JDragon-dummy.m */,
+				CE1FB2F0D49ED8BC68DD96BF1C943D88 /* MBProgressHUD+JDragon-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD+JDragon";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				DED9670B6D6979E5BB8683918D10876E /* Pods */,
+				EE91EECC72CF91FF2BA24A09AF0D3A91 /* Products */,
+				89E3F0DC9A8EA305F375B0FFD93969D9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		89E3F0DC9A8EA305F375B0FFD93969D9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8FBC186D3CA1F4FC6B5E60139C4145A0 /* Pods-ClassicCamera */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8FBC186D3CA1F4FC6B5E60139C4145A0 /* Pods-ClassicCamera */ = {
+			isa = PBXGroup;
+			children = (
+				7E0E4853545E8B938EEC5592C4D0749F /* Pods-ClassicCamera-acknowledgements.markdown */,
+				9BB98EFEB11C0AE6A5999E0976932946 /* Pods-ClassicCamera-acknowledgements.plist */,
+				1148E9C2C80E543789055C3D8093BF8E /* Pods-ClassicCamera-dummy.m */,
+				AF7CDC8FE9FEDD77D40C8FFA2E5DA0DD /* Pods-ClassicCamera-frameworks.sh */,
+				F93DC05EA2B5C7E3834296885A630473 /* Pods-ClassicCamera-resources.sh */,
+				6C1090A5B52F6C0E11CD776BD6B75541 /* Pods-ClassicCamera.debug.xcconfig */,
+				38AC118EC3AFE8E2245E428D4E0E5606 /* Pods-ClassicCamera.release.xcconfig */,
+			);
+			name = "Pods-ClassicCamera";
+			path = "Target Support Files/Pods-ClassicCamera";
+			sourceTree = "<group>";
+		};
+		98908796C0DC6011CE4973D06B55EAE3 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				FDE552AD05889961EBEF8EF1E8240B28 /* MBProgressHUD.h */,
+				903D694DE512072A216139CF3E7E8A06 /* MBProgressHUD.m */,
+				A8A25206544C29F1AF67C5C6158A7926 /* Support Files */,
+			);
+			name = MBProgressHUD;
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		A795E1806389B307EB5924F8F1C8F53D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0DA0CFDF876409BECC058512432A375E /* Assets.xcassets */,
+				3C6809BFAB8D6B3FA356C5516E6B611D /* BLImagePicker.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A8A25206544C29F1AF67C5C6158A7926 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F538903FC2ED62F0C5EF59FC120A592C /* MBProgressHUD.xcconfig */,
+				DAF80FE536BED63F710E73677E8FEEF4 /* MBProgressHUD-dummy.m */,
+				E1A8A8A87CF312D818F7353D05E612CC /* MBProgressHUD-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		C93AA53D048424A67CC426E3C9422A44 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8621F66D446C6F4AC0D7F817144EB150 /* CoreGraphics.framework */,
+				AC7524F0BE53ABC149C4387DFEFE2B51 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DED9670B6D6979E5BB8683918D10876E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB0801AE8C7F9FA36EBE2DF6989F6495 /* BLImagePickerLib */,
+				98908796C0DC6011CE4973D06B55EAE3 /* MBProgressHUD */,
+				18A7DDAB40B9217F331B539CD03D02A2 /* MBProgressHUD+JDragon */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE91EECC72CF91FF2BA24A09AF0D3A91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				079DDFF5BB0F6FF99F728FDD1E8593C8 /* libBLImagePickerLib.a */,
+				61636FB4028F0447D1C10AECAF1B7CD5 /* libMBProgressHUD.a */,
+				5901B11FF2F0812175062CFB15989CCD /* libMBProgressHUD+JDragon.a */,
+				EEC2646C45E9C32DB88BE76E38811B05 /* libPods-ClassicCamera.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB0801AE8C7F9FA36EBE2DF6989F6495 /* BLImagePickerLib */ = {
+			isa = PBXGroup;
+			children = (
+				A04067153FC91FC12409B3BF630FBD16 /* BLDIYTrasitionAnimation.h */,
+				BEEADDBD3C94638901145C19B5FCD05F /* BLDIYTrasitionAnimation.m */,
+				4759D5A280C7238176900B70C9767866 /* BLImageClipingViewController.h */,
+				54C2AC4F457D7ED81DD9C9CD878BE5C5 /* BLImageClipingViewController.m */,
+				C207DA8F26313351E1DCE458FD61AC51 /* BLImageGroupViewController.h */,
+				0493B34E89E0876F4DD100E910D45087 /* BLImageGroupViewController.m */,
+				2B97FE216B64EDF0510823F59FF6644A /* BLImageHelper.h */,
+				F731BCF3C1879F464E0E61C67A324A02 /* BLImageHelper.m */,
+				E31C5E86C7BF84F13FBC60CD0297D5FC /* BLImagePickerViewController.h */,
+				98D88B0957574AF9C0AEF48421962451 /* BLImagePickerViewController.m */,
+				2361367F290C7D6D65C4976D1DCF6DC4 /* BLListCollectionViewCell.h */,
+				C866AD3A83C5922FC8AAEB28B3960589 /* BLListCollectionViewCell.m */,
+				33190F5E5CBCFAABA7251458FCB521B3 /* BLListFooterReusableView.h */,
+				ABCBC76BB4BFFE765E231F6742102CB5 /* BLListFooterReusableView.m */,
+				1E7E7928066EF57627D28AD9883E6D34 /* BLPhotoGroupCell.h */,
+				A2A7D22F02E5C6EE4E77DF24EC842256 /* BLPhotoGroupCell.m */,
+				0A4C47A18DF05C71A6C29ECDD1D6F8FF /* BLPhotoListFooterView.h */,
+				DFA25D0325C4771D773234933BB41306 /* BLPhotoListFooterView.m */,
+				DCE794B5F0A42AC88491E7FF75003400 /* BLPickerBaseViewController.h */,
+				1BCFD512B0389C7569435B99BB2D7C29 /* BLPickerBaseViewController.m */,
+				FF078C5947DA44BA4863A178316D8336 /* BLPickerConfig.h */,
+				3758E2D41CDFBA7936860BA434F99D0C /* BLPresentTransitionAnimator.h */,
+				7DBC067E3C38F1A2F0991A7DA584BB83 /* BLPresentTransitionAnimator.m */,
+				5DC493F9BBAE6DB0C4EDF5107C0C07DB /* BLPreviewImageCell.h */,
+				43663DF2FB40E344AF09898B4A51C26C /* BLPreviewImageCell.m */,
+				276979253386520CA75DEAADB34F9D62 /* BLPreviewImageFooterView.h */,
+				414E7DB5CFDC4BB340CFE52B567A4507 /* BLPreviewImageFooterView.m */,
+				EE09CD981D4BF759AAF55BA260C83FDC /* BLPreviewImageHeaderView.h */,
+				7B9D0D0974CC1AA7694C8E6EA945A1B1 /* BLPreviewImageHeaderView.m */,
+				CB0009EAE2411EEC0AC707644ADFD769 /* BLPreviewImageViewController.h */,
+				A4646A36FC47BAD9E3826C73F406B637 /* BLPreviewImageViewController.m */,
+				D5C985C1C81813137F09EA4B1C3BCDD3 /* BLPushTransitionAnimator.h */,
+				80DCAFBA738267ACF2D1BC6AEBB97721 /* BLPushTransitionAnimator.m */,
+				C145D61F0D9863726AF5876DD931AB60 /* BLTabBarTransitionAnimator.h */,
+				327C4AA3F88B18C2CB6AC53F2AB4FBBF /* BLTabBarTransitionAnimator.m */,
+				91757B2D74B0D62B7B6570C6A21F505D /* BLTransitionAnimator.h */,
+				D2DC5430621A624001457AA5BA5CB3AC /* BLTransitionInteraction.h */,
+				C2954592014112F624912A4FA54C0E2E /* BLTransitionInteraction.m */,
+				BA0063EF1BE98D7B9894665A0B788FED /* BLTrasitionAnimatorConfig.h */,
+				5B15A1E17C321A14DA03FCDF73ACECAB /* PHAsset+AddFlag.h */,
+				7EBDD9BC36003A446347FCB08E98DA3B /* PHAsset+AddFlag.m */,
+				2A0AD2D6A06AD30A51D10ADFBCC5B92A /* UINavigationController+BLPushTrasition.h */,
+				55D7FF6BB8187FF47A1111224E5FF5C4 /* UINavigationController+BLPushTrasition.m */,
+				2851551E6250C2D9BA68E0E9D0F8A65E /* UIViewController+BLPresentTrasition.h */,
+				10D648DCFCD939AA887AE47348FA039B /* UIViewController+BLPresentTrasition.m */,
+				A795E1806389B307EB5924F8F1C8F53D /* Resources */,
+				FD43E49E54DE626EBC91CA9BB24DE03F /* Support Files */,
+			);
+			name = BLImagePickerLib;
+			path = BLImagePickerLib;
+			sourceTree = "<group>";
+		};
+		FD43E49E54DE626EBC91CA9BB24DE03F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFEF8F6673AF4788E8E20AD403067151 /* BLImagePickerLib.xcconfig */,
+				74CE02E4A516E6DBE1DAC9FACBED4076 /* BLImagePickerLib-dummy.m */,
+				928774AAA72BCF1FCC327ED388FEE4CE /* BLImagePickerLib-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BLImagePickerLib";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		705F9AB013D814C0D24AD1CF054E4B79 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F36AA4DB8F467585EC3C4EA8478DA5 /* BLDIYTrasitionAnimation.h in Headers */,
+				C6E19F6D0F484B76CCDFFEF82F276EB1 /* BLImageClipingViewController.h in Headers */,
+				0F8A414BCD59AC4298EDC323315323AF /* BLImageGroupViewController.h in Headers */,
+				ACFC6A024EE4FAE34134B575F7A463B2 /* BLImageHelper.h in Headers */,
+				9F9039A7DFF3CE5D137EE0E046A90716 /* BLImagePickerViewController.h in Headers */,
+				0F92AE1E719D4FFE80745102AA5E0CC4 /* BLListCollectionViewCell.h in Headers */,
+				82B03FE245202AB6521B0FF231D06B1E /* BLListFooterReusableView.h in Headers */,
+				B6464F16AA0E67B8AB5CEEF8A36C72C0 /* BLPhotoGroupCell.h in Headers */,
+				0B9F55EEA17BD5856C6EAEF3A1E8EF16 /* BLPhotoListFooterView.h in Headers */,
+				70143536011CECD646388900FEE35D93 /* BLPickerBaseViewController.h in Headers */,
+				AE373DB5E01125EA1F449A428C4B3F5D /* BLPickerConfig.h in Headers */,
+				B9BC1ED0FFDE786FAC4E621613643F0A /* BLPresentTransitionAnimator.h in Headers */,
+				C93807D7E42C8EC886BFFD1B21ADBBA1 /* BLPreviewImageCell.h in Headers */,
+				03AD607898F087EB52275B61B27B5031 /* BLPreviewImageFooterView.h in Headers */,
+				D61CC8D5BE08FFD6EFA801908304367C /* BLPreviewImageHeaderView.h in Headers */,
+				C6DEF2A7A36470A3805EA20F004EAB87 /* BLPreviewImageViewController.h in Headers */,
+				E59881441E17A383EA65D3E5C5DDBE37 /* BLPushTransitionAnimator.h in Headers */,
+				7875F6F280ED211DA3063FF7ECC74781 /* BLTabBarTransitionAnimator.h in Headers */,
+				CF33300FF0AFCB5AC0C16274DA61B47F /* BLTransitionAnimator.h in Headers */,
+				FFC5C3B1849CBB020DC4BC5783517900 /* BLTransitionInteraction.h in Headers */,
+				3E28907827662B15C0C3116AA057C92C /* BLTrasitionAnimatorConfig.h in Headers */,
+				E7C6248FF603682AA162B1AB87BCAFEE /* PHAsset+AddFlag.h in Headers */,
+				0335F73202A5DA90785061F9F5D992B0 /* UINavigationController+BLPushTrasition.h in Headers */,
+				F45E86CD96BC00355218C54C44154CC8 /* UIViewController+BLPresentTrasition.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CAFD1DD6B7B2ED1D7755A5BB5F5BD86 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				669005691687C6B3E1258467793987F6 /* MBProgressHUD+JDragon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC33D369E9A80BFCC07EAB513251186 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE08FC3CA35C9B85C0B51D945646E7E3 /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		175B076ED45EB1A3E40F58BA14036467 /* MBProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C66CB3E04875BC1C255326C7ADB2D78 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
+			buildPhases = (
+				FED59DE88F6C855E8E4E64782275A4C6 /* Sources */,
+				12070984FA8985EF77A932BEC1CF2A5D /* Frameworks */,
+				EFC33D369E9A80BFCC07EAB513251186 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBProgressHUD;
+			productName = MBProgressHUD;
+			productReference = 61636FB4028F0447D1C10AECAF1B7CD5 /* libMBProgressHUD.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C418F2DC4130AAA12E79610E135055DD /* BLImagePickerLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01163470B659ABDF9C724537524E4A36 /* Build configuration list for PBXNativeTarget "BLImagePickerLib" */;
+			buildPhases = (
+				51AE844CCA83C49172B4168CB1946B8A /* Sources */,
+				2C91767A631DC4BB01B3F771422B3C7F /* Frameworks */,
+				705F9AB013D814C0D24AD1CF054E4B79 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BLImagePickerLib;
+			productName = BLImagePickerLib;
+			productReference = 079DDFF5BB0F6FF99F728FDD1E8593C8 /* libBLImagePickerLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C9E054153E6C958996555A546F84B3BD /* Pods-ClassicCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CAF7E8EA410A5E664B5B096E8633036 /* Build configuration list for PBXNativeTarget "Pods-ClassicCamera" */;
+			buildPhases = (
+				52EFDC60DDA1D76551651A233E0796B0 /* Sources */,
+				9AA458371D0359FA03B581DD04CA762A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2740F4D51E9D75F7764063C6FD0AB7B5 /* PBXTargetDependency */,
+				3170A136C38A46FC7B6EAC9B29BA6E18 /* PBXTargetDependency */,
+				1B96C0848243C3A123BACD0E02D78C9F /* PBXTargetDependency */,
+			);
+			name = "Pods-ClassicCamera";
+			productName = "Pods-ClassicCamera";
+			productReference = EEC2646C45E9C32DB88BE76E38811B05 /* libPods-ClassicCamera.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E1E7DE1ED655B8BD1D9C56CEAD18E7C7 /* MBProgressHUD+JDragon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F938BB138E356876C64252513290C5D /* Build configuration list for PBXNativeTarget "MBProgressHUD+JDragon" */;
+			buildPhases = (
+				B36D713E17C9BA8EAAB8DA29A1D29E27 /* Sources */,
+				90C20092F51959D22EEA7397A6D1C800 /* Frameworks */,
+				8CAFD1DD6B7B2ED1D7755A5BB5F5BD86 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A1ADC3BCEC93AE4A9BB8CF50D24920B /* PBXTargetDependency */,
+			);
+			name = "MBProgressHUD+JDragon";
+			productName = "MBProgressHUD+JDragon";
+			productReference = 5901B11FF2F0812175062CFB15989CCD /* libMBProgressHUD+JDragon.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = EE91EECC72CF91FF2BA24A09AF0D3A91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C418F2DC4130AAA12E79610E135055DD /* BLImagePickerLib */,
+				175B076ED45EB1A3E40F58BA14036467 /* MBProgressHUD */,
+				E1E7DE1ED655B8BD1D9C56CEAD18E7C7 /* MBProgressHUD+JDragon */,
+				C9E054153E6C958996555A546F84B3BD /* Pods-ClassicCamera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		51AE844CCA83C49172B4168CB1946B8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ABE4EFE428B9930F6209DBB4EA00BCD /* BLDIYTrasitionAnimation.m in Sources */,
+				FF8CAD82A884370BE22B8CBAF6D3D33F /* BLImageClipingViewController.m in Sources */,
+				BAD768532F2042F68B53AE18C737CCF3 /* BLImageGroupViewController.m in Sources */,
+				38CA1C30AC62AB17DBBD56E9DE50A804 /* BLImageHelper.m in Sources */,
+				7D460577B5E8367348EBA86E2CB86AB2 /* BLImagePickerLib-dummy.m in Sources */,
+				01A7056EA08B7A1EAD1F00F5F7FB5ED0 /* BLImagePickerViewController.m in Sources */,
+				2D4C15ABD1A055B122847691201B0A23 /* BLListCollectionViewCell.m in Sources */,
+				5489FCFA85C72A2539B344AE66EAE3DD /* BLListFooterReusableView.m in Sources */,
+				6C9110A7E8C70E857D00ED334E05D4FD /* BLPhotoGroupCell.m in Sources */,
+				3C949109E1D9A59668292BDC0F1124DF /* BLPhotoListFooterView.m in Sources */,
+				48779F5159869FEBE71B5A76E554E1AC /* BLPickerBaseViewController.m in Sources */,
+				EA00796E17303197664BD5F976B6EC65 /* BLPresentTransitionAnimator.m in Sources */,
+				CB59BD1643651E22F444F2800CAB2224 /* BLPreviewImageCell.m in Sources */,
+				6FCAACE2837E096488ABE2843F86CD68 /* BLPreviewImageFooterView.m in Sources */,
+				475E9E9FDACEADD834AD4CFCFABAE558 /* BLPreviewImageHeaderView.m in Sources */,
+				55FDC4A1F445F8B06664713A02435479 /* BLPreviewImageViewController.m in Sources */,
+				DDED3B3874E713BA79E3F6F67AF6C6D0 /* BLPushTransitionAnimator.m in Sources */,
+				3E801C3CB5DF66B149A335F56716003A /* BLTabBarTransitionAnimator.m in Sources */,
+				B450FB11C8A5618839159C5CAED05CC7 /* BLTransitionInteraction.m in Sources */,
+				841C852BCAD3083D1020FAAAC8C1AD64 /* PHAsset+AddFlag.m in Sources */,
+				4027908091B66808134A62A3D941C45F /* UINavigationController+BLPushTrasition.m in Sources */,
+				86AD906E5F401B233FDB9D67B74090B7 /* UIViewController+BLPresentTrasition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52EFDC60DDA1D76551651A233E0796B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				135C3EB3EE7B892086075C83458EBB21 /* Pods-ClassicCamera-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B36D713E17C9BA8EAAB8DA29A1D29E27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB0717294DDD7B2F3408456646F793C /* MBProgressHUD+JDragon-dummy.m in Sources */,
+				8DDB507683AFD34C43B7FF97892E8856 /* MBProgressHUD+JDragon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FED59DE88F6C855E8E4E64782275A4C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E528D890E3B32D53D963CE1417BA4D8 /* MBProgressHUD-dummy.m in Sources */,
+				1A2FB482A3E6213D3D4A3E7FD621B223 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B96C0848243C3A123BACD0E02D78C9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MBProgressHUD+JDragon";
+			target = E1E7DE1ED655B8BD1D9C56CEAD18E7C7 /* MBProgressHUD+JDragon */;
+			targetProxy = C4172B3B0B542E2959306D6427CB8761 /* PBXContainerItemProxy */;
+		};
+		2740F4D51E9D75F7764063C6FD0AB7B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BLImagePickerLib;
+			target = C418F2DC4130AAA12E79610E135055DD /* BLImagePickerLib */;
+			targetProxy = 26DFDC8A90DB928A02C4FE87695E95A4 /* PBXContainerItemProxy */;
+		};
+		3170A136C38A46FC7B6EAC9B29BA6E18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 175B076ED45EB1A3E40F58BA14036467 /* MBProgressHUD */;
+			targetProxy = 0ED6F3A22E5F4A718C71C611D71FB943 /* PBXContainerItemProxy */;
+		};
+		3A1ADC3BCEC93AE4A9BB8CF50D24920B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 175B076ED45EB1A3E40F58BA14036467 /* MBProgressHUD */;
+			targetProxy = 30B445C0706D8E52111849F075CB8A22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		48E386E0A1FB0C7DB7DFEA0CEF9FAA3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F538903FC2ED62F0C5EF59FC120A592C /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		497BA753EEAFDBAAD0E719A285D06BB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38AC118EC3AFE8E2245E428D4E0E5606 /* Pods-ClassicCamera.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54CF971D812395846E04B1C4AAB5A5B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C1090A5B52F6C0E11CD776BD6B75541 /* Pods-ClassicCamera.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		61A4981E770F3712B06B8F1A24281C97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C38F8A9CD40B58FC24946C9AA0D4197 /* MBProgressHUD+JDragon.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD+JDragon/MBProgressHUD+JDragon-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		750A3D962860C461B9F6B1ED41007B5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C38F8A9CD40B58FC24946C9AA0D4197 /* MBProgressHUD+JDragon.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD+JDragon/MBProgressHUD+JDragon-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		921A1B870585688A2485D854C7437AE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		92A1920F414626ACDFE70DB60A268DB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F538903FC2ED62F0C5EF59FC120A592C /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD0602E0E09BB444BC65A50757E46AC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFEF8F6673AF4788E8E20AD403067151 /* BLImagePickerLib.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/BLImagePickerLib/BLImagePickerLib-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E223EAA41CF1DB7B8ACF4CBF7458798B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E63FA6DF52DE0F4B217CB28FB6A1BCB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFEF8F6673AF4788E8E20AD403067151 /* BLImagePickerLib.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/BLImagePickerLib/BLImagePickerLib-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01163470B659ABDF9C724537524E4A36 /* Build configuration list for PBXNativeTarget "BLImagePickerLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD0602E0E09BB444BC65A50757E46AC0 /* Debug */,
+				E63FA6DF52DE0F4B217CB28FB6A1BCB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F938BB138E356876C64252513290C5D /* Build configuration list for PBXNativeTarget "MBProgressHUD+JDragon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61A4981E770F3712B06B8F1A24281C97 /* Debug */,
+				750A3D962860C461B9F6B1ED41007B5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				921A1B870585688A2485D854C7437AE8 /* Debug */,
+				E223EAA41CF1DB7B8ACF4CBF7458798B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CAF7E8EA410A5E664B5B096E8633036 /* Build configuration list for PBXNativeTarget "Pods-ClassicCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54CF971D812395846E04B1C4AAB5A5B1 /* Debug */,
+				497BA753EEAFDBAAD0E719A285D06BB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C66CB3E04875BC1C255326C7ADB2D78 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48E386E0A1FB0C7DB7DFEA0CEF9FAA3C /* Debug */,
+				92A1920F414626ACDFE70DB60A268DB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,18 @@
+PODS:
+  - BLImagePickerLib (1.0.3)
+  - MBProgressHUD (0.9.2)
+  - MBProgressHUD+JDragon (0.0.3):
+    - MBProgressHUD (~> 0.9.2)
+
+DEPENDENCIES:
+  - BLImagePickerLib (~> 1.0.3)
+  - MBProgressHUD+JDragon (~> 0.0.3)
+
+SPEC CHECKSUMS:
+  BLImagePickerLib: 32d8ebf1940b21601f530c567d3c401fbc47c925
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MBProgressHUD+JDragon: 74b18a89dac13cc921df0e2b0c2945b29b15e7ab
+
+PODFILE CHECKSUM: 96fff3660e3d013797db4027056fbbc0e0a23a1b
+
+COCOAPODS: 1.4.0
