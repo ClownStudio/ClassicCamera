@@ -316,7 +316,7 @@
 {
     [filter useNextFrameForImageCapture];
     [picSource processImage];
-    _editImage = [filter imageFromCurrentFramebufferWithOrientation:0];
+    _editImage = [filter imageFromCurrentFramebuffer];
     [_editImageView setImage:_editImage];
 }
 

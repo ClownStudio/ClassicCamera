@@ -108,6 +108,7 @@
 
 -(void)didClickButtonAtIndex:(NSInteger)index button:(UIButton *)btn
 {
+    
     SaturationFilter = nil;
     ContrastFilter = nil;
     ExposureFilter = nil;

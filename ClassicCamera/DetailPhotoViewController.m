@@ -246,44 +246,60 @@
 
 /**同步方式保存图片到系统的相机胶卷中---返回的是当前保存成功后相册图片对象集合*/
 -(void)syncSaveImage:(UIImage *)image{
-    __block NSString *createdAssetID = nil;
-    [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
-        createdAssetID = [PHAssetChangeRequest             creationRequestForAssetFromImage:image].placeholderForCreatedAsset.localIdentifier;
-    } completionHandler:^(BOOL success, NSError * _Nullable error) {
-        if (error) {
-            [MBProgressHUD hideHUD];
-            [MBProgressHUD showErrorMessage:NSLocalizedString(@"SaveError", nil)];
-        }else{
-            PHFetchResult<PHAsset *> *assets = [PHAsset fetchAssetsWithLocalIdentifiers:@[createdAssetID] options:nil];
-            if (assets == nil)
-            {
-                [MBProgressHUD hideHUD];
-                [MBProgressHUD showErrorMessage:NSLocalizedString(@"SaveError", nil)];
-                return;
-            }
-            
-            //2 拥有自定义相册（与 APP 同名，如果没有则创建）--调用刚才的方法
-            PHAssetCollection *assetCollection = [self getAssetCollectionWithAppNameAndCreateIfNo];
-            if (assetCollection == nil) {
-                [MBProgressHUD hideHUD];
-                [MBProgressHUD showErrorMessage:NSLocalizedString(@"CreateAlbumError", nil)];
-                return;
-            }
-            
-            [[PHPhotoLibrary sharedPhotoLibrary] performChangesAndWait:^{
-                //--告诉系统，要操作哪个相册
-                PHAssetCollectionChangeRequest *collectionChangeRequest = [PHAssetCollectionChangeRequest changeRequestForAssetCollection:assetCollection];
-                //--添加图片到自定义相册--追加--就不能成为封面了
-                //--[collectionChangeRequest addAssets:assets];
-                //--插入图片到自定义相册--插入--可以成为封面
-                [collectionChangeRequest insertAssets:assets atIndexes:[NSIndexSet indexSetWithIndex:0]];
-            } error:nil];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [MBProgressHUD hideHUD];
-                [MBProgressHUD showSuccessMessage:NSLocalizedString(@"SaveSuccess", nil)];
-            });
+    NSString *title = [NSBundle mainBundle].infoDictionary[(__bridge NSString*)kCFBundleNameKey];
+    //查询所有【自定义相册】
+    PHFetchResult<PHAssetCollection *> *collections = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeAlbum subtype:PHAssetCollectionSubtypeAlbumRegular options:nil];
+    PHAssetCollection *createCollection = nil;
+    for (PHAssetCollection *collection in collections) {
+        if ([collection.localizedTitle isEqualToString:title]) {
+            createCollection = collection;
+            break;
         }
-    }];
+    }
+    if (createCollection == nil) {
+        //当前对应的app相册没有被创建
+        //创建一个【自定义相册】
+        NSError *error = nil;
+        [[PHPhotoLibrary sharedPhotoLibrary]performChangesAndWait:^{
+            //创建一个【自定义相册】
+            [PHAssetCollectionChangeRequest creationRequestForAssetCollectionWithTitle:title];
+        } error:&error];
+    }
+    
+    NSError *error = nil;
+    __block PHObjectPlaceholder *placeholder = nil;
+    [[PHPhotoLibrary sharedPhotoLibrary]performChangesAndWait:^{
+       placeholder =  [PHAssetChangeRequest creationRequestForAssetFromImage:image].placeholderForCreatedAsset;
+    } error:&error];
+    if (error) {
+        [MBProgressHUD hideHUD];
+        [MBProgressHUD showErrorMessage:@"Save failed"];
+        return;
+    }
+    // 2.拥有一个【自定义相册】
+    //2 拥有自定义相册（与 APP 同名，如果没有则创建）--调用刚才的方法
+    PHAssetCollection *assetCollection = [self getAssetCollectionWithAppNameAndCreateIfNo];
+    if (assetCollection == nil) {
+        [MBProgressHUD hideHUD];
+        [MBProgressHUD showErrorMessage:@"Album creation failed"];
+        return;
+    }
+    // 3.将刚才保存到【相机胶卷】里面的图片引用到【自定义相册】
+    [[PHPhotoLibrary sharedPhotoLibrary]performChangesAndWait:^{
+        PHAssetCollectionChangeRequest *requtes = [PHAssetCollectionChangeRequest changeRequestForAssetCollection:assetCollection];
+        [requtes addAssets:@[placeholder]];
+    } error:&error];
+    if (error) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [MBProgressHUD hideHUD];
+            [MBProgressHUD showErrorMessage:@"Save failed"];
+        });
+    } else {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [MBProgressHUD hideHUD];
+            [MBProgressHUD showSuccessMessage:@"Saved successfully"];
+        });
+    }
 }
 
 /**拥有与 APP 同名的自定义相册--如果没有则创建*/
